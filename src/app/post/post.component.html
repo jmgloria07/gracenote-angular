@@ -1,25 +1,27 @@
 <div class="wrap-comp-post">
-    <div class="wrap-openings">
-        <h3>Share your graces!</h3>
-        <mat-form-field class="select-openings" color="primary" appearance="fill">
-            <mat-label>Select your Opening</mat-label>
-            <mat-select formControlName="opening">
-                <mat-option *ngFor="let opening of mOpenings" [value]="opening.id">{{opening.displayText}}</mat-option>
-            </mat-select>
-        </mat-form-field>
-    </div>
-    <div class="wrap-post">
-        <mat-form-field class="input-grace" color="primary" appearance="fill">
-            <mat-label>What are you thankful for?</mat-label>
-            <textarea formControlName="displayText" cdkTextareaAutosize
-            #autosize="cdkTextareaAutosize"
-            cdkAutosizeMinRows="1"
-            cdkAutosizeMaxRows="5" matInput></textarea>
-        </mat-form-field>
-    </div>
-    <div class="wrap-button">
-        <button mat-raised-button type="submit" color="primary">Post</button>
-    </div>
+    <form class="form-post" [formGroup]="mFormGroup" (ngSubmit)="createGrace()">
+        <div class="wrap-openings">
+            <h3>Share your graces!</h3>
+            <mat-form-field class="select-openings" color="primary" appearance="fill">
+                <mat-label>Select your Opening</mat-label>
+                <mat-select formControlName="opening">
+                    <mat-option *ngFor="let opening of mOpenings" [value]="opening.id">{{opening.displayText}}</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="wrap-post">
+            <mat-form-field class="input-grace" color="primary" appearance="fill">
+                <mat-label>What are you thankful for?</mat-label>
+                <textarea formControlName="displayText" cdkTextareaAutosize
+                #autosize="cdkTextareaAutosize"
+                cdkAutosizeMinRows="1"
+                cdkAutosizeMaxRows="5" matInput></textarea>
+            </mat-form-field>
+        </div>
+        <div class="wrap-button">
+            <button mat-raised-button type="submit" color="primary">Post</button>
+        </div>
+    </form>
 </div>
 
 

@@ -29,4 +29,17 @@ export class GracenoteApiService {
       + this.openingsRel);
   }
 
+  postGrace(requestParam: Object) {
+    let postUrl = environment.apiDomain 
+      + "/10001"
+      + this.gracesRel;
+
+    return this.http.post(postUrl, requestParam).subscribe(
+      res => {
+        //TODO: add another card to the feed component
+        alert("Success! " + postUrl + "/" + res["id"]); 
+        window.location.reload();
+      });
+  }
+
 }
