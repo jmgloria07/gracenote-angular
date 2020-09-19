@@ -1,9 +1,11 @@
+form.form-post {
+    height: 100%;
+}
 div.wrap-comp-post{
     height: 10em;
     position: relative;
     margin-right: 1em;
     div.wrap-openings {
-        //border: solid red;
         width: 20%;
         height: 100%;
         float: left;
@@ -20,7 +22,6 @@ div.wrap-comp-post{
     }
     div.wrap-post {
         float:left;
-        //border: solid blue;
         position: relative;
         height:100%;
         width: 60%;
@@ -33,7 +34,6 @@ div.wrap-comp-post{
         }
     }
     div.wrap-button {
-        //border: solid gray;
         position: relative;
         height:100%;
         float:left;
