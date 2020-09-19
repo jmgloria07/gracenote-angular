@@ -1,0 +1,49 @@
+div.wrap-comp-post{
+    height: 10em;
+    position: relative;
+    margin-right: 1em;
+    div.wrap-openings {
+        //border: solid red;
+        width: 20%;
+        height: 100%;
+        float: left;
+        margin-right: 1em;
+        position:relative;
+        h3 {
+            white-space: nowrap;
+        }
+        mat-form-field.select-openings {
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+        }
+    }
+    div.wrap-post {
+        float:left;
+        //border: solid blue;
+        position: relative;
+        height:100%;
+        width: 60%;
+        margin-right: 1em;
+        mat-form-field.input-grace {
+            bottom: 0;
+            position: absolute;
+            margin-right: 1em;
+            width: 100%;
+        }
+    }
+    div.wrap-button {
+        //border: solid gray;
+        position: relative;
+        height:100%;
+        float:left;
+        width:10%;
+        button {
+            position: absolute;
+            bottom:2em;
+        }
+    }
+    
+}
+
+
