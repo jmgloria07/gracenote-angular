@@ -1,11 +1,11 @@
 <div class="wrap-comp-post">
-    <form class="form-post" [formGroup]="mFormGroup" (ngSubmit)="createGrace()">
+    <form class="form-post" [formGroup]="graceForm" (ngSubmit)="createGrace()">
         <div class="wrap-openings">
             <h3>Share your graces!</h3>
             <mat-form-field class="select-openings" color="primary" appearance="fill">
                 <mat-label>Select your Opening</mat-label>
                 <mat-select formControlName="opening">
-                    <mat-option *ngFor="let opening of mOpenings" [value]="opening.id">{{opening.displayText}}</mat-option>
+                    <mat-option *ngFor="let opening of openings" [value]="opening.id">{{opening.displayText}}</mat-option>
                 </mat-select>
             </mat-form-field>
         </div>

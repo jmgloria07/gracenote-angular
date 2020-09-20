@@ -6,12 +6,11 @@ Client application that consumes the REST API [Gracenote](https://github.com/jmg
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8 and uses [Angular Material](https://github.com/angular/material) as its general theme.
 
-
 ## Motivation
 
-I wanted to develop the API with the client in mind so that I can easily visualize the needs in the client's perspective. Now that the API has enough resources needed to bootstrap the application, I decided to start this project.
+I wanted to develop the API with the client in mind so that I can easily visualize the needs in the client's perspective. Now that the API has enough resources, I decided to start this project.
 
-Personally, this also helps me practice front-end development. Layouting, color selections, my visual design sense in general has always been lacking. Furthermore, I also wanted to experience creating an app with Angular.
+Personally, this also helps me practice front-end development. Layouting, color selections, my visual design sense in general has always been lacking. Furthermore, I also wanted to experience creating an app from ground-up with Angular.
 
 ## Setup
 
