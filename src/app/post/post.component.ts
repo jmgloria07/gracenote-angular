@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { GraceComponent } from '../feed/grace/grace.component';
 import { Grace, GraceForm, Opening } from '../grace';
 import { GracenoteApiService } from '../gracenote-api.service';
 
@@ -38,9 +37,9 @@ export class PostComponent implements OnInit {
         // TODO: success, use some sort of modal instead of alert
         // also create a fail implementation while at it
         alert("Success! " + environment.apiDomain 
-        + "/10001"
-        + "/graces"
-        + "/" + data.id);
+        + GracenoteApiService.SINGLE_GRACE_REL
+          .replace(GracenoteApiService.USER_PARAM, GracenoteApiService.DEFAULT_USER)
+          .replace(GracenoteApiService.GRACE_PARAM, data.id.toString()));
 
         // set data to new GraceComponent. something like:
         // let graceComponent = new GraceComponent();
