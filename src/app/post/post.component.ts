@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { Grace, GraceForm, Opening } from '../grace';
 import { GracenoteApiService } from '../gracenote-api.service';
@@ -13,16 +13,14 @@ export class PostComponent implements OnInit {
 
   graceForm = GraceForm.DEFAULT_GRACE_FORM; //set with the default graceForm
 
-  openings:Opening[];
+  @Input() openings:Opening[];
 
   constructor(private graceNoteApi:GracenoteApiService){ 
   
   }
 
   ngOnInit(): void {
-    this.graceNoteApi.getOpenings().subscribe(
-      (data: Opening[]) => this.openings = data
-    );
+    
   }
 
   createGrace(): void {

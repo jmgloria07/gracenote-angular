@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Grace, GraceForm } from '../grace';
 import { GracenoteApiService } from '../gracenote-api.service'
 
@@ -9,15 +9,13 @@ import { GracenoteApiService } from '../gracenote-api.service'
 })
 export class FeedComponent implements OnInit {
 
-  graces:Grace[];
+  @Input() graces:Grace[];
 
-  constructor(private graceNoteApi:GracenoteApiService){ 
+  constructor(){ 
   }
 
   ngOnInit() : void {
-    this.graceNoteApi.getGraces().subscribe(
-      (data: Grace[]) => this.graces = data
-    );
+    
   }
 
 }
