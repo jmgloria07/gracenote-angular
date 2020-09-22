@@ -46,14 +46,8 @@ export class AppComponent implements OnInit {
           .replace(GracenoteApiService.USER_PARAM, GracenoteApiService.DEFAULT_USER)
           .replace(GracenoteApiService.GRACE_PARAM, data.id.toString()));
 
-        // set data to new GraceComponent. something like:
-        // let graceComponent = new GraceComponent();
-        // graceComponent.grace = data;
-        
-        // then add to top of FeedComponent, like this:
-        // getFeedComponent().addGrace(graceComponent);//or data
-
-        window.location.reload();//reload for now
+        // add grace to grace list to update feed
+        this.graces.unshift(data);
       }
     );
   }
