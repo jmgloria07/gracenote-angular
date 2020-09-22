@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Grace, GraceForm } from '../grace';
-import { GracenoteApiService } from '../gracenote-api.service'
+import { Grace } from '../grace';
 
 @Component({
   selector: 'app-feed',

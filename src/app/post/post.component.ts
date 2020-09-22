@@ -1,7 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { environment } from 'src/environments/environment';
-import { Grace, GraceForm, Opening } from '../grace';
-import { GracenoteApiService } from '../gracenote-api.service';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { GraceForm, Opening } from '../grace';
 
 @Component({
   selector: 'app-post',
@@ -15,7 +13,9 @@ export class PostComponent implements OnInit {
 
   @Input() openings:Opening[];
 
-  constructor(private graceNoteApi:GracenoteApiService){ 
+  @Output() submit = new EventEmitter();
+
+  constructor(){ 
   
   }
 
@@ -26,29 +26,8 @@ export class PostComponent implements OnInit {
   createGrace(): void {
     console.log("entered create grace");
     //TODO: add another card to the feed component
-
+    this.submit.emit(this.graceForm);
     //get value from gracenote API
-    let grace:Grace; 
-    
-    this.graceNoteApi.postGrace(this.graceForm).subscribe(
-      (data: Grace) => {
-        // TODO: success, use some sort of modal instead of alert
-        // also create a fail implementation while at it
-        alert("Success! " + environment.apiDomain 
-        + GracenoteApiService.SINGLE_GRACE_REL
-          .replace(GracenoteApiService.USER_PARAM, GracenoteApiService.DEFAULT_USER)
-          .replace(GracenoteApiService.GRACE_PARAM, data.id.toString()));
-
-        // set data to new GraceComponent. something like:
-        // let graceComponent = new GraceComponent();
-        // graceComponent.grace = data;
-        
-        // then add to top of FeedComponent, like this:
-        // getFeedComponent().addGrace(graceComponent);//or data
-
-        window.location.reload();//reload for now
-      }
-    );
   }
 
 }
