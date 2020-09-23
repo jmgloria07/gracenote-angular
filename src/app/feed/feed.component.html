@@ -1,9 +1,9 @@
 <h3>Your feed:</h3>
-<mat-card *ngIf="graces ? !(graces.length > 0) : true">
-  <mat-card-header>
-    <mat-card-title class="title">No graces yet. Share them!</mat-card-title>
-  </mat-card-header>
-</mat-card>
-<ng-container *ngFor="let grace of graces">
-  <app-grace [grace]="grace"></app-grace>
-</ng-container>
+<div *ngIf="graces && graces.length > 0; else noGraces">
+  <ng-container *ngFor="let grace of graces; trackBy: trackGrace">
+    <app-grace [grace]="grace"></app-grace>
+  </ng-container>
+</div>
+<ng-template #noGraces>
+  <app-grace [isBlank]="true"></app-grace>
+</ng-template>

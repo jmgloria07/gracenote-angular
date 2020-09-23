@@ -24,10 +24,7 @@ export class PostComponent implements OnInit {
   }
 
   createGrace(): void {
-    console.log("entered create grace");
-    //TODO: add another card to the feed component
     this.submit.emit(this.graceForm);
-    //get value from gracenote API
   }
 
 }

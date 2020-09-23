@@ -9,7 +9,6 @@ import { GracenoteApiService } from './gracenote-api.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'gracenote';
   openings: Opening[];
   graces: Grace[];
   

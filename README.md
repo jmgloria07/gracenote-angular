@@ -31,5 +31,5 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ![preview 09-19-20](https://user-images.githubusercontent.com/3778912/93667797-21232080-fabb-11ea-8e54-c53b0777dcb9.PNG)
 
 ## Future Plans
-- Optimize the codes
+- Optimize service API calls– probably generate a client model through Swagger
 - Add user implementation

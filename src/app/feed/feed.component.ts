@@ -17,4 +17,8 @@ export class FeedComponent implements OnInit {
     
   }
 
+  trackGrace(index:number, grace:Grace) {
+    return grace ? grace.id : undefined;
+  } 
+
 }
