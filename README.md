@@ -29,9 +29,9 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-<sub><a name="myfootnote1">1</a>: Use `environment.prod.ts` for production deployment</sub>
-
 ![preview 09-19-20](https://user-images.githubusercontent.com/3778912/96346436-6fcdd580-10ce-11eb-84d8-5b4519e3b517.PNG)
+
+<sub><a name="myfootnote1">1</a>: Use `environment.prod.ts` for production deployment</sub>
 
 ## Future Plans
 - Optimize service API calls– probably generate a client model through Swagger
