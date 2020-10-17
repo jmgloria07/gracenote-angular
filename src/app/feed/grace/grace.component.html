@@ -1,4 +1,4 @@
-<mat-card color="primary" *ngIf="!isBlank; else noGraces">
+<mat-card color="primary">
   <mat-card-header>
     <mat-card-title class="title">{{grace.opening.displayText}}</mat-card-title>
   </mat-card-header>
@@ -8,9 +8,4 @@
     </p>
   </mat-card-content>
 </mat-card>
-
-<ng-template #noGraces>
-  <mat-card-header *ngIf="!(grace)">
-    <mat-card-title class="title">No graces yet. Share them!</mat-card-title>
-  </mat-card-header>
-</ng-template>
+  

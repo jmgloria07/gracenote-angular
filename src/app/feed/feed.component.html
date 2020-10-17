@@ -1,9 +1,4 @@
 <h3>Your feed:</h3>
-<div *ngIf="graces && graces.length > 0; else noGraces">
-  <ng-container *ngFor="let grace of graces; trackBy: trackGrace">
-    <app-grace [grace]="grace"></app-grace>
-  </ng-container>
-</div>
-<ng-template #noGraces>
-  <app-grace [isBlank]="true"></app-grace>
-</ng-template>
+<app-blank-grace *ngIf="!graces || graces.length == 0"></app-blank-grace>
+<app-grace *ngFor="let grace of graces; trackBy: trackGrace" [blank]="false" [grace]="grace"></app-grace>
+

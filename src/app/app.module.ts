@@ -20,6 +20,7 @@ import { PostComponent } from './post/post.component';
 import { FeedComponent } from './feed/feed.component';
 import { GraceComponent } from './feed/grace/grace.component';
 import { FooterComponent } from './footer/footer.component';
+import { BlankGraceComponent } from './feed/blank-grace/blank-grace.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     PostComponent,
     FeedComponent,
     GraceComponent,
-    FooterComponent
+    FooterComponent,
+    BlankGraceComponent
   ],
   imports: [
     BrowserModule,
