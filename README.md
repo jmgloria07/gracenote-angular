@@ -18,7 +18,7 @@ Personally, this also helps me practice front-end development. Layouting, color 
 2. Setup Gracenote API.
 3. Open Gracenote Angular folder on your preferred IDE (I'm using VS Code).
 4. Remove the `SAMPLE-` prepend at files under `src/enviroments/`. 
-5. Use the corresponding files according to the environment you are in (in this case, `environment.ts`) and point the `apiDomain` environment variable according to the local URL Gracenote API is deployed to (`http://localhost:8080`)<sup>[1](#myfootnote1)</sup>. 
+5. Use the corresponding files according to the environment you are in (in this case, `environment.ts`) and point the `apiDomain` environment variable according to the local URL Gracenote API is deployed to (`http://localhost:8080` by default)<sup>[1](#myfootnote1)</sup>. 
 6. Finally, run the desired Angular command. See the following instructions that are taken from the generated README by Angular.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -29,9 +29,9 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-<a name="myfootnote1">1</a>: Use `environment.prod.ts` for production deployment
+<sub><a name="myfootnote1">1</a>: Use `environment.prod.ts` for production deployment</sub>
 
-![preview 09-19-20](https://user-images.githubusercontent.com/3778912/93667797-21232080-fabb-11ea-8e54-c53b0777dcb9.PNG)
+![preview 09-19-20](https://user-images.githubusercontent.com/3778912/96346436-6fcdd580-10ce-11eb-84d8-5b4519e3b517.PNG)
 
 ## Future Plans
 - Optimize service API calls– probably generate a client model through Swagger
