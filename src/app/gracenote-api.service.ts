@@ -21,7 +21,7 @@ export class GracenoteApiService {
   
   public static readonly OPENINGS_REL = '/openings';
 
-  public static readonly DEFAULT_USER = '10001';
+  public static readonly DEFAULT_USER = '10004';
 
   constructor(private http:HttpClient) { }
 

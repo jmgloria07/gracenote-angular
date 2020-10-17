@@ -1,8 +1,12 @@
 <!--create a banner-->
 <app-banner></app-banner>
-<!--create an element you can post a grace-->
-<app-post [openings]="openings" (submit)="createGrace($event)"></app-post>
-<!--create a feed-->
-<app-feed [graces]="graces"></app-feed>
+
+<div class="content">
+    <!--create an element you can post a grace-->
+    <app-post [openings]="openings" (submit)="createGrace($event)"></app-post>
+    <!--create a feed-->
+    <app-feed [graces]="graces"></app-feed>
+</div>
+
 <!--create a footer-->
 <app-footer></app-footer>
