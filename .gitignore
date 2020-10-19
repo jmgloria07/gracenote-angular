@@ -4,6 +4,9 @@
 /dist
 /tmp
 /out-tsc
+.deployment
+gracenote/
+
 # Only exists if Bazel was run
 /bazel-out
 
@@ -24,6 +27,7 @@ speed-measure-plugin*.json
 *.sublime-workspace
 
 # IDE - VSCode
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -45,6 +49,7 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# angular environment files
+# angular
 src/environments/environment.ts
 src/environments/environment.prod.ts
+package-lock.json

@@ -29,6 +29,12 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+<sub><a name="myfootnote1">1</a>: Use `environment.prod.ts` for production deployment</sub>
+
+### Deploy to production
+1. Run the command `ng build --prod --build-optimizer` at the root directory of the project. This will create a `dist/` folder with the generated minified files.
+2. Copy the contents of this folder to a server instance (i.e. Tomcat server, Azure storage account, etc.).
+
 ![preview 09-19-20](https://user-images.githubusercontent.com/3778912/96346436-6fcdd580-10ce-11eb-84d8-5b4519e3b517.PNG)
 
 <sub><a name="myfootnote1">1</a>: Use `environment.prod.ts` for production deployment</sub>
