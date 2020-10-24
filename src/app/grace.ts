@@ -2,7 +2,10 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 export class Grace {
     
-    constructor (private _id?: number, private _text?: string, private _opening?: Opening) {
+    constructor (private _id?: number, 
+        private _text?: string, 
+        private _opening?: Opening,
+        private _dateCreated?: Date) {
 
     }    
 
@@ -27,17 +30,12 @@ export class Grace {
         this._text = value;
     }
 
-    // public set graceForm(value: GraceForm) {
-    //     this._graceForm = value;
-    // }
-    // public get graceForm() {
-    //     if (!this._graceForm) {
-    //         //create a default graceform
-    //         this._graceForm = 
-    //     }
-        
-    //     return this._graceForm;
-    // }
+    public get dateCreated(): Date {
+        return this._dateCreated;
+    }
+    public set dateCreated(value: Date) {
+        this._dateCreated = value;
+    }
 }
 
 export class Opening {

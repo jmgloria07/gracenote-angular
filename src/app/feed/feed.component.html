@@ -1,4 +1,4 @@
-<h3>Your feed:</h3>
+<h3>Your gratitudes:</h3>
 <app-blank-grace *ngIf="!graces || graces.length == 0"></app-blank-grace>
 <app-grace *ngFor="let grace of graces; trackBy: trackGrace" [blank]="false" [grace]="grace"></app-grace>
 

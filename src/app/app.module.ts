@@ -21,6 +21,7 @@ import { FeedComponent } from './feed/feed.component';
 import { GraceComponent } from './feed/grace/grace.component';
 import { FooterComponent } from './footer/footer.component';
 import { BlankGraceComponent } from './feed/blank-grace/blank-grace.component';
+import { DateAgoPipe } from './pipes/date-ago.pipe';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BlankGraceComponent } from './feed/blank-grace/blank-grace.component';
     FeedComponent,
     GraceComponent,
     FooterComponent,
-    BlankGraceComponent
+    BlankGraceComponent,
+    DateAgoPipe
   ],
   imports: [
     BrowserModule,
