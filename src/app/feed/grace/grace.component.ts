@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Grace } from '../../grace';
+import { Grace } from '../../../model/grace';
 
 @Component({
   selector: 'app-grace',

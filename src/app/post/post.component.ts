@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { GraceForm, Opening } from '../grace';
+import { GraceForm, Opening } from '../../model/grace';
 
 @Component({
   selector: 'app-post',

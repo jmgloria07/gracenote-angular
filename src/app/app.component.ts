@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { Grace, Opening, GraceForm } from './grace';
-import { GracenoteApiService } from './gracenote-api.service';
+import { Grace, Opening, GraceForm } from '../model/grace';
+import { GracenoteApiService } from '../service/gracenote-api.service';
 
 @Component({
   selector: 'app-root',
